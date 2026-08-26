@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Fun Creeper Game!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Creeper's Diamond Rush!</h1>
+        <div id="hud">
+            <span>Score: <span id="score">0</span></span>
+            <span>Time: <span id="timer">30</span>s</span>
+            <span>HP: <span id="health">100</span>%</span>
+        </div>
+        <div id="canvas-container">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            <div id="message-overlay">
+                <h2 id="message-title">Creeper Rush!</h2>
+                <p id="message-sub">Collect diamonds, avoid angry cats, and don't blow up too early!</p>
+                <button id="start-btn">SSSS... START!</button>
+            </div>
+        </div>
+        <div id="controls-hint">
+            Use <strong>Arrow Keys</strong> or <strong>WASD</strong> to move. Press <strong>Space</strong> to BOOM!
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
